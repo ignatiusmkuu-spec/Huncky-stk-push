@@ -251,12 +251,8 @@ export default function App() {
             </div>
           )}
 
-          <button type="submit" className="btn-primary" disabled={status === 'sending'}>
-            {status === 'sending' ? (
-              <><Loader2 size={18} className="spin" /> Sending…</>
-            ) : (
-              <>Pay Now</>
-            )}
+          <button type="submit" className="btn-primary">
+            Pay Now
           </button>
 
           <p className="secure-note">
