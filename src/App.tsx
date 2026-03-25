@@ -100,7 +100,7 @@ export default function App() {
       const stkRes = await fetch(STK_PUSH_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ phoneNumber: formattedPhone, amount: amt }),
+        body: JSON.stringify({ phoneNumber: formattedPhone, amount: amt, till: TILL_NUMBER }),
       })
       const stkData: StkResponse = await stkRes.json()
 
